@@ -1,0 +1,54 @@
+[
+  {
+    "key": "ClientAccessKey",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Client Access Key",
+      "placeholder": "ABC123",
+      "required": true
+    }
+  },
+  {
+    "key": "UserAccessKey",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "User Access Key",
+      "placeholder": "DNOW1X000000",
+      "required": true
+    }
+  },
+  {
+    "key": "Username",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Username",
+      "placeholder": "HelloID",
+      "required": true
+    }
+  },
+  {
+    "key": "Password",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Password",
+      "type": "password",
+      "placeholder": "Please enter a password",
+      "required": true
+    }
+  },
+  {
+    "key": "per_page",
+    "type": "input",
+    "defaultValue": "100",
+    "templateOptions": {
+      "label": "Per Page",
+      "placeholder": "100",
+      "required": true,
+      "description": "Default: 100"
+    }
+  }
+]
