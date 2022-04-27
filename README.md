@@ -7,7 +7,7 @@
 <br />
 
 <p align="center">
-  <img src="Assets/Logo.jpg">
+  <img src="ee6bddb3-9c4e-4c84-8993-17a434bf6897.png">
 </p>
 
 <!-- TABLE OF CONTENTS -->
