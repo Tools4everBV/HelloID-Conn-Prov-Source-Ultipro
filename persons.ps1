@@ -312,18 +312,8 @@ $mc = Measure-Command {
             {
                 $contract['Mobile'] = $phones_ht[$c.employeeNumber][0].Number
             }
-
-            # Employee ID Override logic added to account for Onboarding Data (does not have matching ID)
-            if($employeeNumberOverride.employeeNumber -contains $c.employeeNumber)
-            {
-                $person.ExternalId = $c.EmployeeNumber
-            }
-            if($employeeNumberOverride.employeeNumber -contains $c.supervisorEmployeeNumber)
-            {
-                $contract['supervisorID'] = $c.supervisorEmployeeNumber
-            }
-            
-            # 2022.1.6 - Add 'HasDirectReports' to queue all accounts with direct reports
+          
+            # 2Add 'HasDirectReports' to queue all accounts with direct reports
             $contract["HasDirectReports"] = $supervisors_ht.keys -contains $p.employeeID.toString()
 
 
